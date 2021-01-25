@@ -1,6 +1,7 @@
 const dotenv = require('dotenv');
 const express = require('express');
 const connectDB = require('./config/db');
+const cors = require('cors');
 
 const colors = require('colors');
 const path = require('path');
@@ -14,11 +15,11 @@ const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
 dotenv.config();
 
-const cors = require('cors');
-
 connectDB();
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
