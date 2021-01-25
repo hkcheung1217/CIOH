@@ -1,8 +1,8 @@
-const stripe = require('stripe')(
-	'sk_test_51HGwC8FIYvhOBO6L9pohczZVtOfKoVyCAQcozTGdpYZ6FKWVy3qbHtQPBYemCrrjVrFkD6BdjD5ICSN893VQ6JPv00Jec2vcjn'
-);
+const dotenv = require('dotenv');
+const stripe = require('stripe')(process.env.STRIPE_SECRET);
 const asyncHandler = require('express-async-handler');
 const Order = require('../models/OrderModel');
+dotenv.config();
 
 // @desc    Create new order
 // @route   POST /api/orders

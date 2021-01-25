@@ -20,7 +20,7 @@ const StripeButton = ({ price, userInfo, cartItems, taxAmount, itemsAmount }) =>
 		};
 
 		axios
-			.post('api/orders/payment', { amount: priceForStripe, token, metadata: args })
+			.post('/api/orders/payment', { amount: priceForStripe, token, metadata: args })
 			.then(res =>
 				dispatch(
 					createOrder({

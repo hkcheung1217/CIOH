@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const express = require('express');
 const connectDB = require('./config/db');
-const cors = require('cors');
+
 const colors = require('colors');
 const path = require('path');
 
@@ -13,6 +13,8 @@ const orderRoutes = require('./routes/orderRoutes');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
 dotenv.config();
+
+const cors = require('cors');
 
 connectDB();
 
