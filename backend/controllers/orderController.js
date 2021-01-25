@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 const asyncHandler = require('express-async-handler');
-const Order = require('../models/OrderModel');
+const Order = require('../models/orderModel');
 dotenv.config();
 
 // @desc    Create new order
