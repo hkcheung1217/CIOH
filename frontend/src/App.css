@@ -1,0 +1,15 @@
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.card:hover .rating span {
+	color: #f8e825 !important;
+}
+
+.card:hover .rating span:hover {
+	color: white !important;
+}
+
+.card:hover .card__name:hover {
+	color: rgb(15, 247, 247) !important;
+}

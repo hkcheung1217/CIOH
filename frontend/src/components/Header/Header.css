@@ -1,0 +1,36 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 5px solid black;
+	height: 55px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 10;
+	padding: 0px 15px;
+}
+
+.header__logo {
+	height: 20px;
+	margin-left: 20px;
+}
+
+.header__logo:hover {
+	cursor: pointer;
+}
+
+.header__icons {
+	display: flex;
+	align-items: center;
+}
+
+.header__icons span {
+	font-weight: 600;
+}
+
+#header__menu > .MuiPaper-root {
+	top: 56px !important;
+	width: 100px !important;
+}

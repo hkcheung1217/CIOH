@@ -1,0 +1,26 @@
+.homepage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: scroll;
+}
+
+.homepage__container {
+	padding: 20px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* margin-left: 30px; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.homepage::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.homepage {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}

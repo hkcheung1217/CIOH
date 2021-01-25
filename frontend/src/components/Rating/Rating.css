@@ -1,0 +1,11 @@
+/* .MuiSvgIcon-root {
+	color: darkgoldenrod;
+} */
+.rating {
+	display: flex;
+	align-items: center;
+}
+
+.rating__star {
+	display: flex;
+}

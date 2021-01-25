@@ -1,0 +1,37 @@
+.orderListItem {
+	display: flex;
+	width: 101%;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 50px;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.orderListItem:hover {
+	background-color: #333;
+	color: white;
+}
+
+.orderListItem__id {
+	max-width: 200px;
+	width: 100%;
+}
+
+.orderListItem__createdAt,
+.orderListItem__total,
+.orderListItem__details {
+	max-width: 125px;
+	width: 100%;
+}
+
+.orderListItem > .orderListItem__details {
+	background: #333;
+	color: white;
+	height: 20px;
+}
+
+.orderListItem:hover > .orderListItem__details {
+	background: white;
+	color: #333;
+}

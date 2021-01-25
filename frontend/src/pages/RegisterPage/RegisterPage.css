@@ -1,0 +1,39 @@
+.registerPage {
+	display: grid;
+	place-items: center;
+	padding: 0 20px;
+}
+
+.registerPage__container {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+.registerPage__title {
+	margin: 10px 0;
+}
+
+.buttons > .registerPage__register {
+	height: 50px;
+	width: 120px;
+	background-color: black;
+	font-weight: 600;
+	font-size: 1rem;
+	color: white;
+	margin-bottom: 16px;
+}
+
+.buttons > .registerPage__register:hover {
+	color: black;
+}
+
+.registerPage__login span {
+	font-size: large;
+	font-weight: 500;
+	cursor: default;
+}
+
+.registerPage__login span > .registerPage__loginPointer {
+	cursor: pointer;
+	color: #4c8bf5;
+}
